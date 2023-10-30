@@ -116,10 +116,10 @@ textarea{
     align-items: center;
   }
 .MealsAndIngrediets_container {
-    width: 100%;
+    width: 90%;
   }
   .ListMeals_plans {
-    width:300px;
+    width: 300px;
     text-wrap: wrap;
   }
 }
