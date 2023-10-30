@@ -78,9 +78,36 @@ textarea{
   color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (max-width: 800px) {
+
+  .ListMeals_container-title {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  .ListMeals_plans {
+    width: 250px;
+    text-wrap: wrap;
+  }
+  .btn_add {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .MealsAndIngrediets_container {
+    width: 50%;
+  }
+
+  .inputForm {
+    width: 100%;
+    height: 15px;
+    padding: 5px;
+  }
+  textarea {
+    width: 100%;
+    text-wrap: wrap;
+    height: 130px;
   }
 }
+
 
