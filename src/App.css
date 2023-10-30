@@ -120,8 +120,10 @@ textarea{
   }
   .ListMeals_plans {
     width: 300px;
-    text-wrap: wrap;
   }
+  .text-form{
+  text-wrap: wrap;
+}
 }
 
 
