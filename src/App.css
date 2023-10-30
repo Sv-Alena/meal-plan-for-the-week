@@ -123,7 +123,7 @@ textarea{
     width: 300px;
   }
   .text-form{
-  text-wrap: wrap;
+    word-break: break-all;
 }
 }
 
