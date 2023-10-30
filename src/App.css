@@ -76,6 +76,7 @@ textarea{
 .text-form{
   font-size: 14px;
   color: black;
+  word-break: break-all;
 }
 
 @media all and (max-width: 800px) {
