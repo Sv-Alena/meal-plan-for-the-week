@@ -115,12 +115,11 @@ textarea{
     flex-direction: column;
     align-items: center;
   }
- .ListMeals_plans {
+.MealsAndIngrediets_container {
     width: 100%;
-    text-wrap: wrap;
   }
-  textarea {
-    width: 100%;
+  .ListMeals_plans {
+    width:300px;
     text-wrap: wrap;
   }
 }
