@@ -14,20 +14,18 @@ function App() {
   }, [mealPlans])
   function addMeal() {
     const newMealPlans = {
-      title: "День недели", // для input
+      title: "День недели",
       id: uuid(),
-      mealForADay: '',  //для меню
-      ingredients: ''   //для ингридиентов
+      mealForADay: '', 
+      ingredients: '' 
     };
     setMealPlans( [newMealPlans, ...mealPlans] );
   }
   
   function deleteDay(mealId) {
-    //любое название 'dayId'
     setMealPlans(mealPlans.filter(({id}) => id !== mealId))
   }
 
-  //1. добавление заметки из формы в план,2. если заметка не создана, то форма скрыта, т.е сравниваем id заметок и id формы
   function updateDay(formMeal) {
     const updateMials = mealPlans.map((mealPlan) => {
       if (mealPlan.id === formMeal.id) {
@@ -38,7 +36,6 @@ function App() {
     setMealPlans(updateMials);
   }
 
-//отображаем что пишется в форме в план, под тем же Id
 function getActiveMeal() {
   return mealPlans.find(({id}) => id === selectedDayPlans)
 }
@@ -52,7 +49,6 @@ function getActiveMeal() {
         setSelectedDayPlans={setSelectedDayPlans}
       />
       <MealsForm
-        //один и тот же prop в компоненте для отображения input в плане
         selectedDayPlans={getActiveMeal()}
         updateDay={updateDay}
       />
