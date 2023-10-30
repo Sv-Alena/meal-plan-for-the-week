@@ -110,21 +110,12 @@ textarea{
   }
 }
 @media all and (max-width: 500px) {
-  .ListMeals_container-title {
-    font-size: 18px;
-    padding: 10px;
-    text-align: center;
-  }
-
   .App {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .ListMeals_plans {
-    width:100%;
-    text-wrap: wrap;
-  }
+ 
 }
 
 
