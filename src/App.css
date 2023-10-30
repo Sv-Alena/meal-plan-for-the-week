@@ -109,5 +109,11 @@ textarea{
     height: 130px;
   }
 }
-
+@media all and (max-width: 500px) {
+  .ListMeals_container-title {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+  }
+}
 
