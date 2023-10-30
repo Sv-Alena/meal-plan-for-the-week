@@ -7,7 +7,7 @@ export const MealsForm = ({selectedDayPlans, updateDay}) => {
     })
   }
 
-  if(!selectedDayPlans) return <p className="first-name-form"Мое Меню</p>
+  if(!selectedDayPlans) return <p className="first-name-form">Мое Меню</p>
   return <div className="MealsAndIngrediets_container">
       <div className="MealsAndIngrediets_container-forms">
         <input
