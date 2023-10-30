@@ -9,7 +9,7 @@ export const ListMeals = ({mealPlans, addMeal, deleteDay, selectedDayPlans, setS
       </div>
       <div>
         {mealPlans.map(({id, title, mealForADay}) => (
-          <div key={id} className={`meal ${id === selectedDayPlans ? 'selectedColor' : 'defaultColor'}`} //любое название 'meal'
+          <div key={id} className={`meal ${id === selectedDayPlans ? 'selectedColor' : 'defaultColor'}`}
           onClick={() => setSelectedDayPlans(id)}
           >
             <p className="text-form">{title}</p>
@@ -17,11 +17,7 @@ export const ListMeals = ({mealPlans, addMeal, deleteDay, selectedDayPlans, setS
             <button className="dtn_delete" onClick={() => deleteDay(id)}>удалить</button>
           </div>
         ))}
-        
-        </div>
-        
-        
-      </div>
-    
+        </div>  
+      </div>   
   );
 };
